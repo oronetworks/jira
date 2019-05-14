@@ -73,7 +73,7 @@ class ResilientSession(Session):
     """
 
     def __init__(self, timeout=None):
-        self.max_retries = 3
+        self.max_retries = 1
         self.timeout = timeout
         super(ResilientSession, self).__init__()
 
